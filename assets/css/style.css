@@ -49,7 +49,6 @@ h1{
     display: block;
     margin: 200px auto;
     width: 960px;
-    display: block;
     background-color: white; 
     border: solid 1px #cccccc;
 }
@@ -94,8 +93,10 @@ h1{
 }
 
 .projects{
-    float: left;
     margin-left: 25px;
+    display: inline-flex;
+    border: lightgray solid 1px;
+    margin-bottom: 15px;
 }
 
 
@@ -119,9 +120,11 @@ h1{
 
 .projectLabels{
     position: absolute;
-    margin-left: 0;
+    text-align: center;
     margin-top: 200px;
     background-color: #6ed3cf;
-    text-align: center;
     width: 300px;
+    border-top: solid #6ed3cf 13px;
+    border-bottom: solid #6ed3cf 13px;
+    color: white;
 }
