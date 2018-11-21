@@ -1,3 +1,23 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
 .header{
     height: 150px;
     width: 960px;
@@ -35,6 +55,7 @@ h1{
     bottom: 0;
     background-color: #6ed3cf;
     color: white;
+    font-size: 40px;
 }
 
 .navLinks{
@@ -55,11 +76,11 @@ h1{
 
 #aboutMe{
     font-family: 'Georgia', Times, Times New Roman, serif;
-    margin-left: 25px;
-    margin-right: 25px;
     padding-bottom: 15px;
     border-bottom: lightgray solid 3px;
     color: #6ed3cf;
+    font-size: 32px;
+    margin: 5px 25px 20px 25px;
 }
 
 #photoMe{
@@ -102,20 +123,20 @@ h1{
 
 #contact{
     font-family: 'Georgia', Times, Times New Roman, serif;
-    margin-left: 25px;
-    margin-right: 25px;
     padding-bottom: 15px;
     border-bottom: lightgray solid 3px;
     color: #6ed3cf;
+    font-size: 32px;
+    margin: 5px 25px 20px 25px;
 }
 
 #portfolio{
     font-family: 'Georgia', Times, Times New Roman, serif;
-    margin-left: 25px;
-    margin-right: 25px;
     padding-bottom: 15px;
     border-bottom: lightgray solid 3px;
     color: #6ed3cf;
+    font-size: 32px;
+    margin: 5px 25px 20px 25px;
 }
 
 .projectLabels{
@@ -127,4 +148,34 @@ h1{
     border-top: solid #6ed3cf 13px;
     border-bottom: solid #6ed3cf 13px;
     color: white;
+}
+.contactHeads{
+    font-family: Times, Times New Roman, serif;
+    font-size: 15px;
+    color: #141414;
+    font-weight: normal;
+}
+
+form{
+    margin-left: 25px;
+}
+
+input{
+    width: 906px;
+    margin: 5px 0 10px;
+}
+
+#message{
+    height: 200px;
+}
+
+#sub{
+    width: auto;
+    background-color: #6ed3cf;
+    color: white;
+    border-top: 10px #6ed3cf solid;
+    border-bottom: 10px #6ed3cf solid;
+    border-left: 20px #6ed3cf solid;
+    border-right: 20px #6ed3cf solid;
+    font-size: 20px;
 }
