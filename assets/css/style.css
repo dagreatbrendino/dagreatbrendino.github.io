@@ -18,6 +18,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+/* header bar */
 .header{
     height: 150px;
     width: 960px;
@@ -46,7 +47,7 @@ time, mark, audio, video {
 body{
     background-image: url("../images/folk-pattern.png")
 }
-
+/* My Name */
 h1{
     font-family: 'Georgia', Times, Times New Roman, serif;
     position: absolute;
@@ -66,6 +67,18 @@ h1{
     right: 0;
 }
 
+#ind:hover{
+    font-size: 101%;
+}
+
+#port:hover{
+    font-size: 101%;
+}
+
+#con:hover{
+    font-size: 101%;
+}
+/* generic container for holding content */
 .contentbox{
     display: block;
     margin: 200px auto;
@@ -73,7 +86,7 @@ h1{
     background-color: white; 
     border: solid 1px #cccccc;
 }
-
+/* Header for About Me */
 #aboutMe{
     font-family: 'Georgia', Times, Times New Roman, serif;
     padding-bottom: 15px;
@@ -82,7 +95,6 @@ h1{
     font-size: 32px;
     margin: 5px 25px 20px 25px;
 }
-
 #photoMe{
     width: 25%;
     float: left;
@@ -103,24 +115,32 @@ h1{
     bottom:0;
     height: 50px;
     background-color: rgb(61, 61, 61);
-    border-top: #6ed3cf solid 5px;
+    border-top: #6ed3cf solid 8px;
     width: 100%;
     text-align: center;
     font-size: 12px;
 }
+/* copyright formatting */
 #copy{
     margin-top: 25px;
     color: rgb(167, 167, 167);
 }
-
+/* container for individual projects */
 .projects{
     margin-left: 25px;
     display: inline-flex;
     border: lightgray solid 1px;
     margin-bottom: 15px;
+    opacity: .7;
 }
-
-
+.projects:hover{
+    margin-left: 25px;
+    display: inline-flex;
+    border: lightgray solid 1px;
+    margin-bottom: 15px;
+    opacity: 1;
+}
+/* contact header */
 #contact{
     font-family: 'Georgia', Times, Times New Roman, serif;
     padding-bottom: 15px;
@@ -129,7 +149,7 @@ h1{
     font-size: 32px;
     margin: 5px 25px 20px 25px;
 }
-
+/* portfolio header */
 #portfolio{
     font-family: 'Georgia', Times, Times New Roman, serif;
     padding-bottom: 15px;
@@ -138,7 +158,6 @@ h1{
     font-size: 32px;
     margin: 5px 25px 20px 25px;
 }
-
 .projectLabels{
     position: absolute;
     text-align: center;
@@ -149,6 +168,7 @@ h1{
     border-bottom: solid #6ed3cf 13px;
     color: white;
 }
+/* headlines for inputs */
 .contactHeads{
     font-family: Times, Times New Roman, serif;
     font-size: 15px;
@@ -178,4 +198,13 @@ input{
     border-left: 20px #6ed3cf solid;
     border-right: 20px #6ed3cf solid;
     font-size: 20px;
+}
+
+#workingaway{
+    margin: 15px auto;
+    display: block;
+}
+
+#comingsoon{
+    margin: 15px 25px;
 }
