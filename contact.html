@@ -11,27 +11,26 @@
 <body>
         <!-- This container holds all of the content for the header -->
         <div class = header>
-                <h1>Brendan Kelly</h1>
-                <nav class = navLinks>
-                    <a href= "index.html" target="blank">About</a> |
-                    <a href= "portfolio.html" target="blank">Portfolio</a> |
-                    <a href= "contact.html" target="blank">Contact</a>
-                </nav>
-            </div>
-
+            <h1>Brendan Kelly</h1>
+            <nav class = navLinks>
+                    <a id = ind href= "index.html" target="blank">About</a> |
+                    <a id = port href= "portfolio.html" target="blank">Portfolio</a> |
+                    <a id = con href= "contact.html" target="blank">Contact</a>
+            </nav>
+    </div>
         <div id = tbhindheader>
                 <!-- temp solution to have entire top part be white -->
         </div>
             <!-- This container holds the contact form -->
             <div class = contentbox>
                 <h2 id=contact>Contact</h2>
-                <form action="/action_page.php">
+                <form action="mailto:brendanmkelly94@gmail.com" method="post" enctype="text/plain">
                     <h3 class = contactHeads>Name</h3>
                     <input type="text" name="firstname" placeholder=" John Smith">
                     <h3 class = contactHeads>Email</h3>
                     <input type="text" name="email" placeholder=" example@email.com">
                     <h3 class = contactHeads>Message</h3>
-                    <input id = message type="text" name="message">
+                    <textarea id = message type="text" name="message"></textarea>
                     <input id =sub type="submit" value="Submit">
                   </form> 
             </div>
