@@ -185,6 +185,7 @@ input{
 textarea{
     width: 906px;
     margin: 5px 0 10px;
+    resize: none;
 }
 
 #message{
