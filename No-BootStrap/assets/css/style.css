@@ -1,0 +1,371 @@
+
+/* reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* header bar */
+/* .header{
+    height: 150px;
+    width: 960px;
+    display: block;
+    position: fixed;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background-color:#ffffff;
+    z-index: 100;
+    top: 0;
+}
+
+#tbhindheader{
+    height: 150px;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: 0;
+    border-bottom: solid #cccccc 5px;
+}
+*/
+body{
+    background-image: url("../images/folk-pattern.png")
+}
+.bottom-buffer{
+    margin-bottom: 20px;
+}
+/* My Name */
+/* h1{
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    position: absolute;
+    border:25px solid #6ed3cf;
+    margin-bottom: 0px;
+    bottom: 0;
+    background-color: #6ed3cf;
+    color: white;
+    font-size: 40px;
+}
+
+.navLinks{
+    position: absolute;
+    margin-bottom: 45px;
+    bottom: 0;
+    margin-right: 0px;
+    right: 0;
+}
+
+#ind:hover{
+    font-size: 101%;
+}
+
+#port:hover{
+    font-size: 101%;
+}
+
+#con:hover{
+    font-size: 101%;
+} */
+/* generic container for holding content */
+/* .contentbox{
+    display: block;
+    margin: 200px auto;
+    width: 960px;
+    background-color: white; 
+    border: solid 1px #cccccc;
+} */
+/* Header for About Me */
+/* #aboutMe{
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    padding-bottom: 15px;
+    border-bottom: lightgray solid 3px;
+    color: #6ed3cf;
+    font-size: 32px;
+    margin: 5px 25px 20px 25px;
+}
+#photoMe{
+    width: 25%;
+    float: left;
+    margin: 0 15px 0 25px;
+}
+#bio{ 
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    text-align: left;
+    display: inline-block;
+    margin: 0 25px 15px 0;
+}
+.footer{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    position: fixed;
+    left: 0;
+    bottom:0;
+    height: 50px;
+    background-color: rgb(61, 61, 61);
+    border-top: #6ed3cf solid 8px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+}
+/* copyright formatting */
+/* #copy{
+    margin-top: 25px;
+    color: rgb(167, 167, 167);
+} */
+/* container for individual projects */
+.projects{
+    display: inline-flex;
+    border: lightgray solid 1px;
+    opacity: .7;
+}
+.projects:hover{
+    display: inline-flex;
+    border: lightgray solid 1px;
+    opacity: 1;
+}
+/* It is important that the anchor element be positioned relatively so that the project labels properly positon themselves */
+.projects a{
+    position: relative;
+}
+.projectLabels{
+    position: absolute;
+    text-align: center;
+    top:60%;
+    background-color: #6ed3cf;
+    width: 100%;
+    border-top: solid #6ed3cf 13px;
+    border-bottom: solid #6ed3cf 13px;
+    color: white;
+}
+/* contact header */
+/* #contact{
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    padding-bottom: 15px;
+    border-bottom: lightgray solid 3px;
+    color: #6ed3cf;
+    font-size: 32px;
+    margin: 5px 25px 20px 25px;
+} */
+/* headlines for inputs */
+/* .contactHeads{
+    font-family: Times, Times New Roman, serif;
+    font-size: 15px;
+    color: #141414;
+    font-weight: normal;
+}
+
+form{
+    margin-left: 25px;
+}
+
+input{
+    width: 906px;
+    margin: 5px 0 10px;
+}
+
+textarea{
+    width: 906px;
+    margin: 5px 0 10px;
+    resize: none;
+}
+
+#message{
+    height: 200px;
+}
+
+#sub{
+    width: auto;
+    background-color: #6ed3cf;
+    color: white;
+    border-top: 10px #6ed3cf solid;
+    border-bottom: 10px #6ed3cf solid;
+    border-left: 20px #6ed3cf solid;
+    border-right: 20px #6ed3cf solid;
+    font-size: 20px;
+}
+
+#sub:hover{
+    font-size: 90%;
+    margin-bottom: 7px;
+}
+
+#workingaway{
+    margin: 15px auto;
+    display: block;
+}
+
+#comingsoon{
+    margin: 15px 25px;
+} */
+footer {
+    clear: both;
+    font-size: 12px;
+    color: #ffffff;
+    color: #cccccc;
+    text-align: center;
+    background: #666666;
+    border-top: 8px solid #6ed3cf;
+    height: 50px;
+    margin-top: 20px;
+}
+.foot{
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+}
+@media screen and (max-width: 640px){
+    .header{
+        width: 100% !important;
+        background-color: white;
+        border-bottom: 2px solid #cccccc;
+        margin-bottom: 10px;
+    }
+    .brand{
+        background-color:#6ed3cf;
+        color:white;
+        text-align: center !important;
+        padding: 8px 0px !important;
+        display: block !important;
+    }
+    .navlinks{
+        text-align: center !important;
+        padding: 8px 0px !important;
+        display: block !important;
+        float: none !important;
+    }
+    .contenthead{
+        color: #6ed3cf;
+        width: 92%;
+        margin: 10px auto;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #cccccc;
+    }
+    .content{
+        box-sizing: border-box;
+        width: 95%;
+        background-color:white;
+        border: 2px solid #cccccc;
+        margin: 0 auto;
+    }
+    .me{
+        display: block;
+        width: 92%;
+        height: auto;
+        margin: 20px auto;
+    }
+    .bio{
+        width: 92%;
+        margin: 0 auto;
+    }
+    .portfolio{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+    .projects{
+        margin-bottom: 10px;
+        opacity: 1 !important;
+        width:92% !important;
+    }
+    .projects img, .projects a{
+        width: 100%;
+        height: auto;
+    }
+    .projectLabels{
+        top: 70%;
+    }
+}
+@media screen and (max-width: 768px){
+    .header{
+        /* padding: 0 2.5%; */
+        width: 95%;
+        margin: 0 auto 10px;
+        background-color: white;
+        border-bottom: 2px solid #cccccc;
+    }
+    .brand{
+        background-color:#6ed3cf;
+        color:white;
+        text-align: left;
+        padding: 8px 0px;
+        display: inline-block;
+        padding: 10px 4%;
+    }
+    .navlinks{
+        float: right;
+        padding: 8px 0px;
+    }
+    .contenthead{
+        color: #6ed3cf;
+        width: 92%;
+        margin: 10px auto;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #cccccc;
+    }
+    .content{
+        box-sizing: border-box;
+        width: 95%;
+        background-color:white;
+        border: 2px solid #cccccc;
+        margin: 0 auto;
+    }
+    .portfolio{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .projects{
+        margin: 10px 4%;
+        margin-bottom: 10px;
+        opacity: 1 !important;
+        width:40%;
+    }
+    .projects img, .projects a{
+        width: 100%;
+        height: auto;
+    }
+    .contact{
+        width:92%;
+        margin: auto;
+    }
+    .field{
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+        height: 300px;
+        resize: none;
+    }
+    .sub{
+        color: white;
+        background-color: #6ed3cf;
+        border: none;
+        padding-left:25px;
+        padding-right: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 20px 0;
+    }
+    .sink{
+        min-height: calc(100vh - 148px);
+    }
+    footer{
+        margin-top: 0px;
+    }
+}
