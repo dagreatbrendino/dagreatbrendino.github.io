@@ -61,7 +61,7 @@ body{
 }
 .me{
     float: left;
-    width: 20%;
+    width: 25%;
     height: auto;
     margin: 20px 10px 10px 4%;
 }
@@ -98,7 +98,7 @@ textarea{
     margin: 20px 0;
 }
 .sink{
-    min-height: calc(100vh - 148px);
+    min-height: calc(100vh - 145px);
 }
 
 /* container for individual projects */
@@ -199,7 +199,7 @@ footer {
     .projects{
         margin: 10px 4%;
         margin-bottom: 10px;
-        opacity: 1 !important;
+        opacity: 1;
         width:40%;
     }
     .projects img, .projects a{
@@ -285,7 +285,7 @@ footer {
         .projects{
             margin: 10px 4%;
             margin-bottom: 10px;
-            opacity: 1 !important;
+            opacity: 1;
             width:40%;
         }
         .projects img, .projects a{
@@ -315,33 +315,33 @@ footer {
             margin: 20px 0;
         }
         .sink{
-            min-height: calc(100vh - 145px) !important;
+            min-height: calc(100vh - 145px);
         }
         footer{
-            margin-top: 20px !important;
+            margin-top: 20px;
         }
     }
     @media screen and (max-width: 640px){
         .header{
-            width: 100% !important;
+            width: 100%;
             background-color: white;
             border-bottom: 2px solid #cccccc;
             margin-bottom: 10px;
-            padding: 0 !important;
+            padding: 0;
         }
         .brand{
             background-color:#6ed3cf;
             color:white;
-            width:100% !important;
-            text-align: center !important;
-            padding: 8px 0px !important;
-            display: block !important;
+            width:100%;
+            text-align: center;
+            padding: 8px 0px;
+            display: block;
         }
         .navlinks{
-            text-align: center !important;
-            padding: 8px 0px !important;
-            display: block !important;
-            float: none !important;
+            text-align: center;
+            padding: 8px 0px;
+            display: block;
+            float: none;
         }
         .contenthead{
             color: #6ed3cf;
@@ -358,24 +358,25 @@ footer {
             margin: 0 auto;
         }
         .me{
-            display: block !important;
-            width: 92% !important;
+            display: block;
+            width: 92%;
             height: auto;
-            margin: 20px auto;
+            margin: 20px 4%;
         }
         .bio{
             width: 92%;
-            margin: 0 auto;
+            margin: 0 4%;
+            display: inline-block;
         }
         .portfolio{
             display: flex;
             flex-wrap: wrap;
-            justify-content: center !important;
+            justify-content: center;
         }
         .projects{
             margin-bottom: 10px;
-            opacity: 1 !important;
-            width:92% !important;
+            opacity: 1;
+            width:92%;
         }
         .projects img, .projects a{
             width: 100%;
@@ -385,7 +386,7 @@ footer {
             top: 70%;
         }
         .sink{
-            min-height: calc(100vh - 176px) !important;
+            min-height: calc(100vh - 176px);
         }
     }
 }
