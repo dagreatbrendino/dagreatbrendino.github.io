@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Away From Wolves</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="Assets/style.css">
+    <script src="main.js"></script>
+    <style>
+     
+    </style>
+</head>
+<body>
+    <!-- Main Container -->
+    <div class = container>
+        <!-- Logo -->
+        <div class = row>
+            <div class = col>
+                <img class = "mx-auto logo" src = assets/afwlogo.jpg alt = "logo">
+            </div>
+        </div>
+        <!-- Photo of Band -->
+        <div class = row>
+            <div class = col>
+                <img class = "mx-auto bandpic" src =  assets/members2.jpg alt = "logo">
+            </div>
+        </div>
+    
+        <div class = "row justify-content-around">
+            <div class= "col-10 col-md-6 vids bottom-buffer2">
+                <h3 style="text-align:center">Videos</h3>
+                <!-- Player -->
+                <div class="mx-auto utube embed-responsive embed-responsive-16by9">
+                    <iframe id ="player" class="embed-responsive-item" src="https://www.youtube.com/embed/RO9p6QXHf70" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+                </div>
+                <!-- Video Selector -->
+                <div class="row mx-auto justify-content-between vid-select">
+                    <button type=button class="btn btn-default btn-arrow-left" id = leftAr onClick= prevVid()>Prev Vid</button>
+                    <button type=button class="btn btn-default btn-arrow-right" id = rightAr onClick= nextVid()>Next Vid</button>
+                </div>
+            </div>
+                <!-- Events -->
+                <div class ="col-10 col-md-5 eventcon">
+                    <h3 class="textShrink-h" style = "margin-bottom: 20px; text-align: center;">Upcoming Shows</h3>
+                    <div class="media event  bottom-buffer">
+                        <img class="align-self-center mr-3" src="Assets/Cal.png" alt="Gen">
+                        <div class="media-body">
+                            <h5 class="mt-0 textShrinkEvents">Away From Wolves @ Q-Bar</h5>
+                            <p class="textShrinkEvents">8109 S Cass Ave, Darien, Illinois 60561</p>
+                            <p class="mb-0 textShrinkEvents">Saturday, Jan 5, 2019 at 8:30 PM</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!-- Social Media Links -->
+        <div class = "row justify-content-center">
+
+            <div class = "col-4">
+                <a href="https://www.facebook.com/awayfromwolves">
+                    <img class ="img-fluid" src=https://cdns.iconmonstr.com/wp-content/assets/preview/2012/240/iconmonstr-facebook-2.png alt=fbicon/>
+                </a>
+            </div>
+    
+            <div class = "col-4">
+                    <a href="https://www.instagram.com/awayfromwolves/?hl=en">
+                        <img class ="img-fluid" src=https://cdns.iconmonstr.com/wp-content/assets/preview/2016/240/iconmonstr-instagram-12.png alt=instaicon/>
+                    </a>
+                </div>
+        </div>
+        <footer>
+            <div class = "row justify-content-center">
+                <div class = col>
+                    <p class= "contact textShrink">
+                        Contact<br> awayfromwolves.official@gmail.com <br> (630) 661-9371
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+    // Initial video
+    var video=1;
+    var vp = document.getElementById("player")
+    document.getElementById("leftAr").disabled = true;
+    // This function will change the url to the next video when clicked until the last video is reached
+    function nextVid(){
+        if (video <6){
+            video = (video + 1);
+            if (video ==1){
+                vp.src = "https://www.youtube.com/embed/RO9p6QXHf70"
+                document.getElementById("rightAr").disabled = false;
+                document.getElementById("leftAr").disabled = true;
+            }
+            else if (video ==2){
+                vp.src = "https://www.youtube.com/embed/bVwPmem2NC4"
+                document.getElementById("rightAr").disabled = false;
+                document.getElementById("leftAr").disabled = false;
+            }
+            else if (video ==3){
+                vp.src = "https://www.youtube.com/embed/8V94d2ogfP8"
+                document.getElementById("rightAr").disabled = false;
+                document.getElementById("leftAr").disabled = false;
+                }
+            else if (video ==4){
+                vp.src = "https://www.youtube.com/embed/mL41csPINBM"
+                document.getElementById("rightAr").disabled = false;
+                document.getElementById("leftAr").disabled = false;
+            }
+            else if (video ==5){
+                vp.src = "https://www.youtube.com/embed/od0nbgO7DE4"
+                document.getElementById("rightAr").disabled = false;
+                document.getElementById("leftAr").disabled = false;
+            }
+            else {
+                vp.src="https://www.youtube.com/embed/640mBm6JbR4";
+                document.getElementById("rightAr").disabled = true;
+                document.getElementById("leftAr").disabled = false;
+            }
+        }
+    }
+    //This functionwill change the url to the previous video when clicked until the first video is reached
+    function prevVid(){
+        if (video >1){
+            video = (video - 1);
+            if (video ==1){
+            vp.src = "https://www.youtube.com/embed/RO9p6QXHf70"
+            document.getElementById("rightAr").disabled = false;
+            document.getElementById("leftAr").disabled = true;
+            }
+            else if (video ==2){
+            vp.src = "https://www.youtube.com/embed/bVwPmem2NC4"
+            document.getElementById("rightAr").disabled = false;
+            document.getElementById("leftAr").disabled = false;
+            }
+            else if (video ==3){
+            vp.src = "https://www.youtube.com/embed/8V94d2ogfP8"
+            document.getElementById("rightAr").disabled = false;
+            document.getElementById("leftAr").disabled = false;
+            }
+            else if (video ==4){
+            vp.src = "https://www.youtube.com/embed/mL41csPINBM"
+            document.getElementById("rightAr").disabled = false;
+            document.getElementById("leftAr").disabled = false;
+            }
+            else if (video ==5){
+            vp.src = "https://www.youtube.com/embed/od0nbgO7DE4"
+            document.getElementById("rightAr").disabled = false;
+            document.getElementById("leftAr").disabled = false;
+            }
+            else {
+            vp.src="https://www.youtube.com/embed/640mBm6JbR4"
+            document.getElementById("rightAr").disabled = true;
+            document.getElementById("leftAr").disabled = false;
+
+            }
+        }
+    }
+    </script>
+</body>
+</html>
