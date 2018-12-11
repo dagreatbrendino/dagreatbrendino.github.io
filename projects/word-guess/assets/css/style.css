@@ -1,0 +1,35 @@
+@font-face{ font-family: BlackTop; src: url("../fonts/BlackTop.ttf")}
+body{
+    background-image: url("../images/brickwall.jpg");
+    background-size: 100%;
+}
+h1{
+    font-family: BlackTop;
+    color: white;
+    font-size: 90px;
+    text-align: center;
+}
+.bottom-buffer{
+    margin-bottom: 20px;
+}
+.top-buffer{
+    margin-top: 20px;
+}
+.img-border{
+    box-sizing: border-box;
+    border: 2px solid white;
+}
+.container{
+    background-color: red;
+    border: 2px solid white;
+}
+.center{
+    text-align: center;
+    display: block;
+    margin: 0px auto;
+}
+.image-revealer{
+    z-index: 100; 
+    position:absolute;
+    left: 25%;
+}

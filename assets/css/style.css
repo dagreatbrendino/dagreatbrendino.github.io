@@ -61,6 +61,9 @@ h3{
         height: auto;
         padding-right: 0 !important;
     }
+    .bottom-buffer-sm{
+        margin-bottom: 20px;
+    }
 }
 
 /* projects styling */
@@ -124,3 +127,9 @@ footer {
     margin: 0 auto;
     clear: both;
 }
+
+@media screen and (max-width: 576px){
+    .navbar{
+        padding-left: 0px;
+    }
+    }
