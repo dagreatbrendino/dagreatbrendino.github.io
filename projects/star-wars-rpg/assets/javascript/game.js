@@ -111,7 +111,7 @@ var enemyFighter = {
 var populateFighters = function(arr){
     $.each(arr, function(i, fighter){
         $("#char-selection").append('<div class="col-2 character" value='+ i + '>'+ 
-        '<img class="img-fluid selection-outline" src="assets/images/' + arr[i].name.split(' ').join('') + '.jpg" alt="playercharacter"/>'+
+        '<img class="img-fluid selection-outline" src="assets/images/' + arr[i].name.split(' ').join('').toLowerCase() + '.jpg" alt="playercharacter"/>'+
         '<h6 class="healthpoints text-center" style="bottom: 1%">'+ arr[i].hp +'</h6><h6 class="char-name text-center">' + arr[i].name + '</h6></div>');
     })
 }
@@ -123,14 +123,13 @@ $(document).ready(function () {
         //If the player has not yet chosen their character, the player character object will have its values reassigned to the same values as the character the player clicked on
         //after that the player will no longer be able to select a fighter
         if (!fighterSelected) {
-            debugger
             var index = parseInt($(this).attr("value"));
             playerFighter.setindexofFighter(index);
             playerFighter.setplayerAtk();
             playerFighter.setplayerHP();
             $("#player").attr("style","visibility: visible;");
             $("#player > div > .char-name").text(allFighters[index].name);
-            $("#player > div > img").attr("src", ("assets/images/") + allFighters[index].name.split(' ').join('') + ".jpg"); //changing the image for the selected fighter
+            $("#player > div > img").attr("src", ("assets/images/") + allFighters[index].name.split(' ').join('').toLowerCase() + ".jpg"); //changing the image for the selected fighter
             $("#player > div > .healthpoints").text(playerFighter.playerHP);
             $("#player > div > div > .healthbar").width(100+"%");
             fighterSelected = true;
@@ -150,7 +149,7 @@ $(document).ready(function () {
             enemyFighter.setenemyHP();
             $("#defender").attr("style","visibility: visible;");
             $("#defender > div > .char-name").text(allFighters[index].name);
-            $("#defender > div > img").attr("src", ("assets/images/") + allFighters[index].name.split(' ').join('') + ".jpg");//changing the image for the selected enemy
+            $("#defender > div > img").attr("src", ("assets/images/") + allFighters[index].name.split(' ').join('').toLowerCase() + ".jpg");//changing the image for the selected enemy
             $("#defender > div > .healthpoints").text(enemyFighter.enemyHP);
             $("#defender > div > div > .healthbar").stop(true, true);
             $("#defender > div > div > .healthbar").width(100+"%");
