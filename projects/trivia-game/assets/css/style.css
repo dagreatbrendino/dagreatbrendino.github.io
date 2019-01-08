@@ -1,0 +1,50 @@
+body{
+    background-image: url(../images/marvel-background.jpg);
+}
+
+.header, .timer-text, .question-con, .start-button, .restart-button{
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+.header{
+    margin-bottom: 30px;
+}
+main{
+    margin-top: 100px;
+    width: 75%;
+    background-color: red;
+    height: 600px;;
+    border: 3px solid white;
+    position: relative;
+}
+
+.question-con button{
+    color: white;
+    background-color: red;
+    padding: 3px 14px;
+    border: none;
+}
+
+.question-con button:hover{
+    background-color: rgb(255, 208, 0);
+}
+
+.questiongif{
+    position: absolute;
+    bottom: 5%;
+    width:38%;
+}
+
+@media screen and (max-width: 576px){
+    .questiongif{
+        bottom: 1%;
+        width:60%;
+    }
+    main{
+        margin-top: 0px;
+    }
+    h1{
+        font-size: 50px
+    }
+}
