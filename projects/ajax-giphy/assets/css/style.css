@@ -1,0 +1,80 @@
+.topic{
+    margin: 0px 5px 10px;
+}
+#gif-container{
+    z-index: 100;
+}
+#buttons{
+    background-color: rgb(131, 63, 24);
+    border: 5px black solid;
+    /* margin-left: 0px; */
+}
+.topic{
+    background-color: hsl(13,100%,62%);
+    color: hsl(234,16%,37%);
+    border: 2px white solid;
+}
+.tv-whole{
+    /* height: ; */
+    position: absolute;
+    background-color: rgb(131, 63, 24);
+    width: 100%;
+    z-index: 5;
+    height: 800px;
+}
+.tvscreen1{
+    width: 74%;
+    background-color: rgb(179,180,182);
+    min-height: 700px;
+    z-index: 10;
+    /* bottom: -29%; */
+    margin-top: 3%;
+    left: 6%;
+    border-radius: 25px;
+}
+.tv-dials {
+    z-index: 200;
+    left: 6%;
+    margin-top: 5%;
+}
+.tv-dial{
+    margin-left: 25%;
+    max-width: 50%;
+}
+.rating{
+    margin-left: 20%;
+    color: white;
+}
+.topic:focus{
+    border-color: rgb(255, 153, 0);
+    color: rgb(255, 153, 0);
+}
+.tv-turner{
+    position: absolute;
+    left: 0;
+    max-width: 50%;
+    margin-left: 25%;
+}
+.panel{
+    background-color: black;
+    border: 5px white solid;
+}
+@media screen and (max-width: 992px){
+    .rating{
+        margin-left: 0%;
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .rating{
+        margin-left: 0%;
+        font-size: .6rem;
+    }
+}
+@media screen and (max-width: 576px){
+    .rating{
+        font-size: .6rem;
+        margin-left: 20%;
+    }
+}
