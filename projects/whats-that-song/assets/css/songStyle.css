@@ -1,0 +1,160 @@
+body{
+    background-image: url(../images/tweed_@2X.png);
+    background-repeat: repeat;
+}
+.header-container{
+    font-family: 'Monoton', cursive;
+    font-size:6.5em;
+    color: #fef7ed;
+    text-align:center;
+    padding-top: 2.5%;
+    padding-bottom:2.5%;    
+}
+/* scrolling table found on stack overflow */
+tr {
+    width: 100%;
+    display: inline-table;
+    table-layout: fixed;
+    }
+    
+table{
+    height:300px;            
+    display: -moz-groupbox;    
+}
+tbody{
+    overflow-y: scroll;      
+    height: 200px;            
+    width: 94%;
+    position: absolute;
+}
+.removesong-icon{
+    height: 20px;
+}
+.signup-err{
+    color: rgb(255, 88, 88);
+}
+.sign-up-btn{
+    font-family: 'Voltaire', sans-serif;
+    color: #fef7ed;
+    text-decoration: underline;
+    font-size: 1.1em;
+}
+
+.login-btn{
+    font-family: 'Voltaire', sans-serif;
+    color: #fef7ed;
+    text-decoration: underline;
+    font-size: 1.1em;
+}
+
+.welcome{
+    font-family: 'Voltaire', sans-serif;
+    color: #fef7ed;
+    font-weight: bold;
+    
+}
+
+.recordOne{
+    height: auto; 
+    width: 100%;
+    max-width: 350px; 
+    max-height: 350px;
+}
+
+.recordTwo{
+    height: auto; 
+    width: 100%; 
+    max-width: 350px; 
+    max-height: 350px;
+}
+
+.recordThree{
+    height: auto; 
+    width: 100%;
+    max-width: 350px; 
+    max-height: 350px;
+}
+
+.search-container {
+    background-color: #fef7ed;
+    border: solid;
+    border-width: thin;
+    padding: 2%;
+    margin: auto;
+}
+
+.inputclass, .infoclass{
+    font-family: 'Voltaire', sans-serif;
+}
+
+.results-container{
+    background-color: #fef7ed;
+    font-size: 1.5em;
+    border-width: thin;
+    border: solid;
+    border: round;
+    padding: 2%;
+    margin: auto;
+}
+
+.song{
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 15px;
+    border-width: thin;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.song:hover{
+    background-color: #a5fad6;
+    cursor: pointer;
+}
+
+.queryFound {
+    background-color: #c9faa5;
+}
+.icons{
+    padding-left: 0;
+}
+.icon{
+    margin-right: 2%;
+}
+
+.footer {
+    font-size: 1em;
+    color:#fef7ed;
+}
+
+@media (min-width: 200px) and (max-width: 767.98px) {
+
+    .header-container{
+        font-size:2.75em;
+    }
+
+    .search-container{
+        width: 100%;
+    }
+
+    .results-container{
+        font-size: 1em;
+    }
+
+}
+
+@media (min-width:768px) and (max-width: 1199.98px) {
+    .header-container{
+       font-size:4em;
+   }
+}
+@media (max-width: 460px){
+    th, td {
+        font-size: 16px;
+    }
+}
+#logout:hover {
+    color:#faaca5;
+    cursor: pointer;
+
+}
+
