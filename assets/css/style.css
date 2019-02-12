@@ -127,6 +127,9 @@ footer {
     margin: 0 auto;
     clear: both;
 }
+.contactfoot{
+    margin-bottom: 5px;
+}
 
 @media screen and (max-width: 576px){
     .navbar{
