@@ -1,40 +1,5 @@
 body{
-    background-image: url(../images/folk-pattern.png)
-}
-/* Navbar Elements */
-/* Name */
-.navbar-brand{
-    color:white !important;
-    background-color:#6ed3cf;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-top: 12px solid #6ed3cf;
-    border-bottom: 12px solid #6ed3cf;
-    margin: -12px 0;
-}
-.null-padding-x{
-    padding-right: 0!important;
-    padding-left: 0!important;
-}
-.nav-link{
-    color: rgb(167, 167, 167) !important;
-}
-/* Adds padding so that when nav bar collapses, the drop down items line up with my name */
-@media screen and (max-width: 767px){
-.navbar-nav .nav-link {
-    padding-left: 15px;
-    }
-}
-.navbar{
-    border-bottom: 2px solid lightgray;
-}
-
-
-/* Headers for Content */
-h3{
-    color: #6ed3cf;
-    padding-bottom: 15px;
-    border-bottom: 2px solid lightgray;
+    background-image: url(../images/prism.png)
 }
 /* used to add top margins */
 .top-buffer{
@@ -44,67 +9,14 @@ h3{
 .bottom-buffer{
     margin-bottom:20px;
 }
-/* Genertic container for content */
-.content{
-    background-color:white;
-    border: solid 1px lightgray;
-}
-/* About Styling */
-.me{
-    width: 40%;
-    height: auto;
-}
-/* my picture will take up the entire container when screen size is less than 768px */
-@media screen and (max-width: 767px){
-    .me{
-        width: 100%;
-        height: auto;
-        padding-right: 0 !important;
-    }
-    .bottom-buffer-sm{
-        margin-bottom: 20px;
-    }
-}
 
-/* projects styling */
-.proj-img{
-    width: 600px;
-    height: auto;
+.proj-links{
+    background-color: #adfcf9;
+    box-sizing: border-box;
 }
-.proj-label{
-    background-color:#6ed3cf;
-    padding: 15px 0;
-}
-.carousel-caption{
-    right:0% !important;
-    left:0% !important;
-    bottom:15%;
-}
-/* I still don't quite understand why I need to use inline-flex to get the labels to properly position themselves */
-.project a{
-    display:inline-flex;
-    position: relative;
-}
-.project img{
-    border: 1px solid lightgray;
-}
-
-/* Contact Styling */
-h5{
-    font-weight: 200;
-}
-.contact-bub{
-    width: 100%;
-}
-textarea{
-    height: 250px;
-    resize: none;
-}
-.sub{
+.proj-link{
     color: white;
-    background-color: #6ed3cf;
-    padding: 7px 20px;
-    border: none;
+    padding: 8% 0;
 }
 /* Footer Styling */
 /* Used to make a div that will take up 100% of the screen minus the size of the footer so that the footer will be at the bottom, even if the content itself
@@ -127,12 +39,159 @@ footer {
     margin: 0 auto;
     clear: both;
 }
-.contactfoot{
+.headercon{
+    background-color: #938E94;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    border: 1px solid #B0A295;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.stats{
+    padding: 0;
+    list-style-type: none;
+}
+.title{
+    font-weight: 400;
+}
+.value{
+    font-weight: 300;
+}
+.nav-tabs{
+    border-bottom: none;
+}
+.about-text{
+    color: #495057;
+}
+.prof-img{
+    padding-left: 0px;
+}
+.nav-link{
+    border: none;
+}
+.nav-tabs{
+    margin-bottom: -3px;
+}
+.nav-link.active{
+    border: none;
+}
+.nav-tabs .nav-link.active.proj-nav{
+    background-color: #7395AE
+
+}
+.proj-nav{
+    background-color:  #7395AE;
+}
+.nav-tabs .nav-link.active.about-nav{
+    background-color: #938E94;
+}
+.about-nav{
+    background-color: #938E94;
+}
+.about-section{
+    padding:20px 2.5% 0 2.5%;
+    background-color: #938E94;
+    border-radius: 0 15px 15px 15px;
+}
+.projs{
+    position: absolute;
+    top: 0;
+    background-color: #7395AE;
+    border-radius: 0 15px 15px 15px;
+}
+.contact{
+    position: absolute;
+    top: 0;
+    background-color: #557A95;
+}
+.proj-img-mobile{
+    display: none;
+}
+.proj-link{
+    background-color: #7395AE;
+    padding: 6px 10px;
+}
+.ext-button{
+    background-color: #557A95;
+    margin-top: 5px;
     margin-bottom: 5px;
 }
-
+a{
+    color: white;
+}
+.about-col{
+    padding-right: 0;
+}
+.proj-item{
+    background-color: white;
+    border: 1px solid gray;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    width: 95%;
+    margin: 20px auto;
+}
+.proj-item:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
 @media screen and (max-width: 576px){
     .navbar{
         padding-left: 0px;
     }
+    .proj-img-mobile{
+        display: inherit;
+    }
+    .proj-img-def{
+        display: none;
+    }
+    .proj-title{
+        text-align: center;
+    }
 }
+
+.proj-img-col{
+    padding-left: 0;
+}
+  
+@media screen and (max-width: 1200px) {
+    .title {
+      font-size: .8rem;
+    }
+    .value{
+        font-size: .8rem;
+    }
+
+  }
+
+  @media screen and (max-width: 992px) {
+    .title {
+      font-size: .6rem;
+    }
+    .value{
+        font-size: .6rem;
+    }
+    .text-aligner{
+        text-align: right;
+    }
+    .proj-img-col{
+        padding-left: 15px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .title{
+        font-size: .63rem;
+    }
+    .value{
+        font-size: .63rem;
+    }
+    .proj-link{
+        font-size: .63rem;
+    }
+    .ext-links{
+        font-size: .8rem;
+    }
+    @media screen and (max-width: 576px){
+        .proj-link{
+            font-size: .73rem;
+        }
+    }
+  }
+  
