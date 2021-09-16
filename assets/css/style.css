@@ -139,6 +139,9 @@ a{
     .proj-img-mobile{
         display: inherit;
     }
+    .prof-img{
+        padding-right: 0
+    }
     .proj-img-def{
         display: none;
     }
